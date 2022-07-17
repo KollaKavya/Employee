@@ -40,4 +40,8 @@ public class EmployeeMethods {
             System.out.println(j.toString());
         }
     }
+
+    public void count(){
+        System.out.println(employeeDetailsList.size());
+    }
 }

@@ -9,7 +9,7 @@ public class EmployeeMain {
         Scanner s=new Scanner(System.in);
         EmployeeMethods methodObject=new EmployeeMethods();
         while(true){
-            System.out.println("1: Add\n2: Delete\n3: Display\n4: Exit");
+            System.out.println("1: Add\n2: Delete\n3: Display\n4: Count\n5: Exit");
             System.out.println("Enter the option: ");
             option=s.nextInt();
             switch(option){
@@ -38,6 +38,10 @@ public class EmployeeMain {
                     methodObject.display();
                     break;
                 case 4:
+                    System.out.println("Total Number of Employees");
+                    methodObject.count();
+                    break;
+                case 5:
                     System.exit(0);
                     break;
 
